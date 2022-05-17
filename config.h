@@ -6,8 +6,8 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 // static char *font = "mono:pixelsize=12:antialias=true:autohint=true";
-static char *font = { "Px437 IBM BIOS:size=7:antialias=true:autohint=true"};
-static char *font2[] = { "JoyPixels:pixelsize=10:antialias=true:autohint=true" };
+static char *font = { "Px437 IBM BIOS:size=8:antialias=true:autohint=true"};
+static char *font2[] = { "JoyPixels:pixelsize=14:antialias=true:autohint=true" };
 static int borderpx = 2;
 
 /*
@@ -105,10 +105,10 @@ char *termname = "st-256color";
  *
  *	stty tabs
  */
-unsigned int tabspaces = 8;
+unsigned int tabspaces = 4;
 
 /* bg opacity */
-float alpha = 0.8;
+float alpha = 0.9;
 float alphaOffset = 0.0;
 float alphaUnfocus;
 
@@ -134,7 +134,8 @@ static const char *colorname[] = {
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#8be9fd", /* 256 -> cursor */
 	"#555555", /* 257 -> rev cursor*/
-	"#171925", /* 258 -> bg */
+	/* "#171925", 258 -> bg */
+	"#141418", /* 258 -> bg */
 	"#f8f8f2", /* 259 -> fg */
 };
 
