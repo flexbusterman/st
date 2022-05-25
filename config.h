@@ -7,7 +7,8 @@
  */
 // static char *font = "mono:pixelsize=12:antialias=true:autohint=true";
 // static char *font = { "Px437 IBM BIOS:size=8:antialias=true:autohint=true"};
-static char *font = { "Fixedsys Excelsior:size=12:antialias=false:autohint=true"};
+// static char *font = { "Fixedsys Excelsior:size=12:antialias=false:autohint=true"};
+static char *font = { "PxPlus IBM VGA 9x16:size=12:antialias=false:autohint=true"};
 static char *font2[] = { "JoyPixels:pixelsize=14:antialias=true:autohint=true" };
 
 /* disable bold, italic and roman fonts globally */
