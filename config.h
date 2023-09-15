@@ -5,7 +5,14 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+static char *font = { "Fira Mono Medium:size=11:antialias=true"};
+static char *font2[] = { "JoyPixels:pixelsize=14:antialias=true:autohint=true" };
+
+/* disable bold, italic and roman fonts globally */
+int disablebold = 1;
+int disableitalic = 0;
+int disableroman = 0;
+
 static int borderpx = 2;
 
 /*
@@ -251,12 +258,12 @@ static Shortcut shortcuts[] = {
 	{ MODKEY,               XK_m,           zoom,           {.f = +1} },
 	{ MODKEY,               XK_n,           zoom,           {.f = -1} },
 	{ TERMMOD,              XK_Home,        zoomreset,      {.f =  0} },
-	{ MODKEY|ShiftMask,     XK_C,           clipcopy,       {.i =  0} },
-	{ MODKEY|ShiftMask,     XK_V,           clippaste,      {.i =  0} },
+	{ TERMMOD,					    XK_C,           clipcopy,       {.i =  0} },
+	{ TERMMOD,					    XK_V,           clippaste,      {.i =  0} },
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
-	{ MODKEY,               XK_c,           normalMode,     {.i =  0} },
+	{ TERMMOD,              XK_N,           normalMode,     {.i =  0} },
 };
 
 /*
