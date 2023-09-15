@@ -274,6 +274,11 @@ static int focused = 0;
 
 static int oldbutton = 3; /* button event on startup: 3 = release */
 
+/* declared in config.h */
+extern int disablebold;
+extern int disableitalic;
+extern int disableroman;
+
 void
 clipcopy(const Arg *dummy)
 {
@@ -1046,17 +1051,20 @@ xloadfonts(char *fontstr, double fontsize)
 	win.cyo = floorf(dc.font.height * (chscale - 1) / 2);
 
 	FcPatternDel(pattern, FC_SLANT);
-	FcPatternAddInteger(pattern, FC_SLANT, FC_SLANT_ITALIC);
+	if (!disableitalic)
+		FcPatternAddInteger(pattern, FC_SLANT, FC_SLANT_ITALIC);
 	if (xloadfont(&dc.ifont, pattern))
 		die("can't open font %s\n", fontstr);
 
 	FcPatternDel(pattern, FC_WEIGHT);
-	FcPatternAddInteger(pattern, FC_WEIGHT, FC_WEIGHT_BOLD);
+	if (!disablebold)
+		FcPatternAddInteger(pattern, FC_WEIGHT, FC_WEIGHT_BOLD);
 	if (xloadfont(&dc.ibfont, pattern))
 		die("can't open font %s\n", fontstr);
 
 	FcPatternDel(pattern, FC_SLANT);
-	FcPatternAddInteger(pattern, FC_SLANT, FC_SLANT_ROMAN);
+	if (!disableroman)
+		FcPatternAddInteger(pattern, FC_SLANT, FC_SLANT_ROMAN);
 	if (xloadfont(&dc.bfont, pattern))
 		die("can't open font %s\n", fontstr);
 
