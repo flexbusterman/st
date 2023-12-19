@@ -106,34 +106,34 @@ float alpha = 0.8, alphaUnfocused = 0.8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	// Dracula Theme
- //    /* 8 normal colors */
- //    [0] = "#000000", /* black   */
- //    [1] = "#ff5555", /* red     */
- //    [2] = "#50fa7b", /* green   */
- //    [3] = "#f1fa8c", /* yellow  */
- //    [4] = "#bd93f9", /* blue    */
- //    [5] = "#ff79c6", /* magenta */
- //    [6] = "#8be9fd", /* cyan    */
- //    [7] = "#bbbbbb", /* white   */
-	//
- //    /* 8 bright colors */
- //    [8]  = "#44475a", /* black   */
- //    [9]  = "#ff5555", /* red     */
- //    [10] = "#50fa7b", /* green   */
- //    [11] = "#f1fa8c", /* yellow  */
- //    [12] = "#bd93f9", /* blue    */
- //    [13] = "#ff79c6", /* magenta */
- //    [14] = "#8be9fd", /* cyan    */
- //    [15] = "#ffffff", /* white   */
-	//
- //    /* special colors */
- //    [256] = "#282a36", /* background */
- //    [257] = "#f8f8f2", /* foreground */
-	//
-	// /* more colors can be added after 255 to use with DefaultXX */
-	// "#cccccc",
-	// "#555555",
-	// "black",
+    /* 8 normal colors */
+    [0] = "#000000", /* black   */
+    [1] = "#ff5555", /* red     */
+    [2] = "#50fa7b", /* green   */
+    [3] = "#f1fa8c", /* yellow  */
+    [4] = "#bd93f9", /* blue    */
+    [5] = "#ff79c6", /* magenta */
+    [6] = "#8be9fd", /* cyan    */
+    [7] = "#bbbbbb", /* white   */
+
+    /* 8 bright colors */
+    [8]  = "#44475a", /* black   */
+    [9]  = "#ff5555", /* red     */
+    [10] = "#50fa7b", /* green   */
+    [11] = "#f1fa8c", /* yellow  */
+    [12] = "#bd93f9", /* blue    */
+    [13] = "#ff79c6", /* magenta */
+    [14] = "#8be9fd", /* cyan    */
+    [15] = "#ffffff", /* white   */
+
+    /* special colors */
+    [256] = "#282a36", /* background */
+    [257] = "#f8f8f2", /* foreground */
+
+	/* more colors can be added after 255 to use with DefaultXX */
+	"#cccccc",
+	"#555555",
+	"black",
 
 	// // Synthwave Alpha Theme
  //    /* 8 normal colors */
@@ -165,32 +165,62 @@ static const char *colorname[] = {
 	// "#555555",
 	// "black",
 
-	// Synthwave Almost Monochrome Theme
-	[0] = "#000000", /* black  */
-	[1] = "#746068", /* red   */
-	[2] = "#708680", /* green  */
-	[3] = "#999989", /* yellow */
-	[4] = "#81778D", /* blue  */
-	[5] = "#947C95", /* magenta */
-	[6] = "#7B9393", /* cyan  */
-	[7] = "#D1D0D1", /* white  */
-	[8] = "#85828A", /* black  */
-	[9] = "#AF8897", /* red   */
-	[10] = "#94B9AC", /* green  */
-	[11] = "#EAEACE", /* yellow */
-	[12] = "#B5A8C4", /* blue  */
-	[13] = "#E0B1DB", /* magenta */
-	[14] = "#ACD7D7", /* cyan  */
-	[15] = "#FFFFFF", /* white  */
+	// // Synthwave Almost Monochrome Theme
+	// [0] = "#000000", /* black  */
+	// [1] = "#746068", /* red   */
+	// [2] = "#708680", /* green  */
+	// [3] = "#999989", /* yellow */
+	// [4] = "#81778D", /* blue  */
+	// [5] = "#947C95", /* magenta */
+	// [6] = "#7B9393", /* cyan  */
+	// [7] = "#D1D0D1", /* white  */
+	// [8] = "#85828A", /* black  */
+	// [9] = "#AF8897", /* red   */
+	// [10] = "#94B9AC", /* green  */
+	// [11] = "#EAEACE", /* yellow */
+	// [12] = "#B5A8C4", /* blue  */
+	// [13] = "#E0B1DB", /* magenta */
+	// [14] = "#ACD7D7", /* cyan  */
+	// [15] = "#FFFFFF", /* white  */
+	//
+	// /* special colors */
+	// [256] = "#281740", /* background */
+	// [257] = "#C9C7C1", /* foreground */
+	//
+	// /* more colors can be added after 255 to use with DefaultXX */
+	// "#CCCCCC",
+	// "#555555",
+	// "black"
 
-	/* special colors */
-	[256] = "#281740", /* background */
-	[257] = "#C9C7C1", /* foreground */
+	// ST Default Colors
 
-	/* more colors can be added after 255 to use with DefaultXX */
-	"#CCCCCC",
-	"#555555",
-	"black"
+	/* 8 normal colors */
+	// "black",
+	// "red3",
+	// "green3",
+	// "yellow3",
+	// "blue2",
+	// "magenta3",
+	// "cyan3",
+	// "gray90",
+	//
+	// /* 8 bright colors */
+	// "gray50",
+	// "red",
+	// "green",
+	// "yellow",
+	// "#5c5cff",
+	// "magenta",
+	// "cyan",
+	// "white",
+	//
+	// [255] = 0,
+	//
+	// /* more colors can be added after 255 to use with DefaultXX */
+	// "#cccccc",
+	// "#555555",
+	// "gray90", /* default foreground colour */
+	// "black", /* default background colour */
 
 };
 
