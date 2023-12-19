@@ -105,34 +105,93 @@ float alpha = 0.8, alphaUnfocused = 0.8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-    /* 8 normal colors */
-    [0] = "#000000", /* black   */
-    [1] = "#ff5555", /* red     */
-    [2] = "#50fa7b", /* green   */
-    [3] = "#f1fa8c", /* yellow  */
-    [4] = "#bd93f9", /* blue    */
-    [5] = "#ff79c6", /* magenta */
-    [6] = "#8be9fd", /* cyan    */
-    [7] = "#bbbbbb", /* white   */
+	// Dracula Theme
+ //    /* 8 normal colors */
+ //    [0] = "#000000", /* black   */
+ //    [1] = "#ff5555", /* red     */
+ //    [2] = "#50fa7b", /* green   */
+ //    [3] = "#f1fa8c", /* yellow  */
+ //    [4] = "#bd93f9", /* blue    */
+ //    [5] = "#ff79c6", /* magenta */
+ //    [6] = "#8be9fd", /* cyan    */
+ //    [7] = "#bbbbbb", /* white   */
+	//
+ //    /* 8 bright colors */
+ //    [8]  = "#44475a", /* black   */
+ //    [9]  = "#ff5555", /* red     */
+ //    [10] = "#50fa7b", /* green   */
+ //    [11] = "#f1fa8c", /* yellow  */
+ //    [12] = "#bd93f9", /* blue    */
+ //    [13] = "#ff79c6", /* magenta */
+ //    [14] = "#8be9fd", /* cyan    */
+ //    [15] = "#ffffff", /* white   */
+	//
+ //    /* special colors */
+ //    [256] = "#282a36", /* background */
+ //    [257] = "#f8f8f2", /* foreground */
+	//
+	// /* more colors can be added after 255 to use with DefaultXX */
+	// "#cccccc",
+	// "#555555",
+	// "black",
 
-    /* 8 bright colors */
-    [8]  = "#44475a", /* black   */
-    [9]  = "#ff5555", /* red     */
-    [10] = "#50fa7b", /* green   */
-    [11] = "#f1fa8c", /* yellow  */
-    [12] = "#bd93f9", /* blue    */
-    [13] = "#ff79c6", /* magenta */
-    [14] = "#8be9fd", /* cyan    */
-    [15] = "#ffffff", /* white   */
+	// // Synthwave Alpha Theme
+ //    /* 8 normal colors */
+ //    [0] = "#000000", /* black   */
+ //    [1] = "#9A0048", /* red     */
+ //    [2] = "#00986C", /* green   */
+ //    [3] = "#ADAD3E", /* yellow  */
+ //    [4] = "#6E29AD", /* blue    */
+ //    [5] = "#B300AD", /* magenta */
+ //    [6] = "#00B0B1", /* cyan    */
+ //    [7] = "#B9B1BC", /* white   */
+	//
+ //    /* 8 bright colors */
+ //    [8]  = "#7F7094", /* black   */
+ //    [9]  = "#E60A70", /* red     */
+ //    [10] = "#0AE4A4", /* green   */
+ //    [11] = "#F9F972", /* yellow  */
+ //    [12] = "#AA54F9", /* blue    */
+ //    [13] = "#FF00F6", /* magenta */
+ //    [14] = "#00FBFD", /* cyan    */
+ //    [15] = "#F2F2E3", /* white   */
+	//
+ //    /* special colors */
+ //    [256] = "#241B30", /* background */
+ //    [257] = "#F2F2E3", /* foreground */
+	//
+	// /* more colors can be added after 255 to use with DefaultXX */
+	// "#cccccc",
+	// "#555555",
+	// "black",
 
-    /* special colors */
-    [256] = "#282a36", /* background */
-    [257] = "#f8f8f2", /* foreground */
+	// Synthwave Almost Monochrome Theme
+	[0] = "#000000", /* black  */
+	[1] = "#746068", /* red   */
+	[2] = "#708680", /* green  */
+	[3] = "#999989", /* yellow */
+	[4] = "#81778D", /* blue  */
+	[5] = "#947C95", /* magenta */
+	[6] = "#7B9393", /* cyan  */
+	[7] = "#D1D0D1", /* white  */
+	[8] = "#85828A", /* black  */
+	[9] = "#AF8897", /* red   */
+	[10] = "#94B9AC", /* green  */
+	[11] = "#EAEACE", /* yellow */
+	[12] = "#B5A8C4", /* blue  */
+	[13] = "#E0B1DB", /* magenta */
+	[14] = "#ACD7D7", /* cyan  */
+	[15] = "#FFFFFF", /* white  */
+
+	/* special colors */
+	[256] = "#281740", /* background */
+	[257] = "#C9C7C1", /* foreground */
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
+	"#CCCCCC",
 	"#555555",
-	"black",
+	"black"
+
 };
 
 /*
