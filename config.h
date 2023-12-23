@@ -6,7 +6,8 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = { "Fira Mono Medium:size=11:antialias=true"};
-static char *font2[] = { "JoyPixels:pixelsize=14:antialias=true:autohint=true" };
+// static char *font2[] = { "JoyPixels:pixelsize=14:antialias=true:autohint=true" };
+static char *font2[] = { "Font Awesome 6 Free:pixelsize=14:antialias=true:autohint=true" };
 
 /* disable bold, italic and roman fonts globally */
 int disablebold = 1;
