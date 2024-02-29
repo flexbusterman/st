@@ -5,7 +5,9 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = { "Fira Mono Medium:size=11:antialias=true"};
+// static char *font = { "BmPlus IBM VGA 8x16:size=11:antialias=false"};
+static char *font = { "PxPlus IBM VGA 8x16:size=11.5:style=Regular:antialias=true"};
+// static char *font = { "Fira Mono Medium:size=11:antialias=true"};
 // static char *font2[] = { "JoyPixels:pixelsize=14:antialias=true:autohint=true" };
 static char *font2[] = { "Font Awesome 6 Free:pixelsize=14:antialias=true:autohint=true" };
 
